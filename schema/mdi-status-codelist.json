@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "identifier": {
+        "propertyOrder": 1,
+        "title": "Identifier",
+        "description": "The code for an MDI Status.",
+        "type": "integer",
+        "examples": [
+          {"identifier": 1},
+          {"identifier": 10},
+        ]
+      },
+      "label": {
+        "propertyOrder": 2,
+        "title": "Label",
+        "description": "A label for the identifier",
+        "type": "string",
+        "examples": [
+          {"label": "Black or African American Owned"}
+        ]
+      }
+    },
+    "required": ["identifier", "label"],
+    "additionalProperties": True
+  }
+}
